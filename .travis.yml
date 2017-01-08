@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.5"
+
+env:
+ - PYRAMID_TEST_DB_STRING=sqlite://
+
+install:
+ - pip install -e .
+
+script: py.test

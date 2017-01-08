@@ -1,0 +1,3 @@
+*.sqlite
+development.ini
+__pycache__
