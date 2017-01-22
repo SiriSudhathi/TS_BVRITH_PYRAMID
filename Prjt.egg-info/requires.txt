@@ -6,9 +6,7 @@ SQLAlchemy
 transaction
 zope.sqlalchemy
 waitress
-
 passlib
-
 
 [testing]
 WebTest >= 1.3.1

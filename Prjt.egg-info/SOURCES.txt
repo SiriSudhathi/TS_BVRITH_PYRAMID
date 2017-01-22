@@ -4,10 +4,7 @@ README.txt
 development.ini
 production.ini
 pytest.ini
-<<<<<<< HEAD
-=======
 setup.py
->>>>>>> e1da1b1a24d4a235f61ab3252ab6ba96a072a3ca
 Prjt.egg-info/PKG-INFO
 Prjt.egg-info/SOURCES.txt
 Prjt.egg-info/dependency_links.txt
@@ -21,10 +18,7 @@ prjt/tests.py
 prjt/models/__init__.py
 prjt/models/meta.py
 prjt/models/mymodel.py
-<<<<<<< HEAD
-=======
 prjt/models/page.py
->>>>>>> e1da1b1a24d4a235f61ab3252ab6ba96a072a3ca
 prjt/models/user.py
 prjt/scripts/__init__.py
 prjt/scripts/initializedb.py
