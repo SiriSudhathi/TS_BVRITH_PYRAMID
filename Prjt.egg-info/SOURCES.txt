@@ -27,6 +27,7 @@ prjt/static/pyramid.png
 prjt/static/theme.css
 prjt/templates/404.jinja2
 prjt/templates/layout.jinja2
+prjt/templates/login.pt
 prjt/templates/mytemplate.jinja2
 prjt/views/__init__.py
 prjt/views/default.py
