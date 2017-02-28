@@ -2,7 +2,9 @@ from passlib.hash import bcrypt
 from sqlalchemy import (
     Column,
     Integer,
-    Text,
+    Unicode,     #<- will provide Unicode field
+    UnicodeText, #<- will provide Unicode text field
+    DateTime,
 )
 
 from .meta import Base
@@ -11,11 +13,12 @@ from .meta import Base
 class User(Base):
     """ The SQLAlchemy declarative model class for a User object. """
     __tablename__ = 'users'
-    id = Column(Integer, primary_key=True)
-    name = Column(Text, nullable=False, unique=True)
-    role = Column(Text, nullable=False)
+    class User(Base):
+        __tablename__ = 'users'
+        id = Column(Integer, primary_key=True)
+        name = Column(Unicode(255), unique=True, nullable=False)
+        password = Column(Unicode(255), nullable=False)
 
-    password_hash = Column(Text)
 
     def set_password(self, pw):
         pwhash = bcrypt.hashpw(pw.encode('utf8'), bcrypt.gensalt())
